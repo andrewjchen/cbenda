@@ -3,10 +3,17 @@ cbenda
 
 Interactive, simulatable robotics.
 
-### Installation
+### General Installation
 
-1. install V-REP
-2. install IPython Notebook with scipy, numpy, and matplotlib.
+1.  Download V-REP http://www.coppeliarobotics.com/downloads.html
+2. Install IPython Notebook with scipy, numpy, and matplotlib:
+    ```
+    $ sudo pip install ipython[notebook] --upgrade
+    
+    $ sudo pip install scipy --upgrade
+
+    $ sudo pip install matplotlib --upgrade
+    ```
 
 ### Setting up V-REP
 
@@ -15,3 +22,20 @@ Interactive, simulatable robotics.
 3. Copy remoteAPI.so to `notebook/`
 
 For more details: http://www.coppeliarobotics.com/helpFiles/en/remoteApiClientSide.htm
+
+
+### Getting Started
+
+
+1. Start V-REP in your `V-REP` directory:
+
+    ```
+    ./vrep.sh
+    ```
+2. Load `scenes/starwhal2.ttt`. File > Open Scene...
+3. Run IPython Notebook:
+
+    ```
+    $ ipython notebook
+    ```
+4. Try running `Narwhal Test.ipynb`
